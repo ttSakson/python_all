@@ -13,7 +13,6 @@
 атрибути класу - це наче маркування об'єкта, щоб його описати, наприклад номер телефон студента є атрибутом.
 __init__ - це метод (або функція у класі) що має назву "конструктор". він викликається коли ми створюємо новий об'єкт у класі і даємо йому початкові атрибути.
 self - посилання для створення доступ до атрибутів в базовому класі.
-
 '''
 
 
@@ -75,8 +74,8 @@ print(gr)
 assert str(gr.find_student('Jobs')) == str(st1), 'Test1'
 assert gr.find_student('Jobs2') is None, 'Test2'
 assert isinstance(gr.find_student('Jobs'), Student) is True, 'Метод поиска должен возвращать экземпляр'
-
 gr.delete_student('Taylor')
+
 print(gr)  # Only one student
 
 gr.delete_student('Taylor')  # No error!
